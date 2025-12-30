@@ -8,7 +8,7 @@ import WordForADayPageStyle from '../WordForADay/WordForADayPageStyles';
 export default function HomePage({navigation: {navigate}}) {
   const getDate = () => {
     var date = new Date().getDate();
-    var month = new Date().getMonth() + 2;
+    var month = new Date().getMonth() + 1;
     console.log(date, month);
     // navigate('Word');
     fetch('http://77db6b762fa0.ngrok.io/getword/', {
